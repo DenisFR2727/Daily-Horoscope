@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Lakki+Reddy&family=Nunito+Sans:opsz,wght@6..12,400;6..12,800&family=Nunito:ital,wght@0,500;1,500&family=Quicksand:wght@400;700&display=swap');
+
+@mixin icon-header-position(){
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+// Hamburger-menu
+
+header {
+    width: 100%;
+    height: 85px;
+    
+    .header-block {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .line-header {
+        max-width: 896px;
+        height: 1px;
+        background: grey;
+        margin: 0 auto;
+    }
+
+    nav {
+        margin: 0 auto;
+        max-width: 896px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 0;
+
+        .daily-horoscope-link {
+            text-decoration: none;
+            color: #1d1e20;
+
+            .daily-horoscope{
+                width: 200px;
+                height: 32px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                
+                .icon {
+                    width: 32px;
+                    height: 32px;
+                    background-image: url('../icons/message-typing-svgrepo-com.svg');
+                    @include icon-header-position;
+                }
+                span {
+                    font-size: 1.25rem;
+                    line-height: 1.75rem;
+                    font-family: "Nunito", sans-serif;
+                    font-optical-sizing: auto;
+                    font-weight: 500;
+                    font-style: normal;
+                }
+            }
+        }
+        .yoursign-and-theme {
+            display: flex;
+            justify-content: space-between;
+        }
+        .select-zodiac {
+            display: block;
+            width: 200px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            
+            .cancel-menu {
+               display: none;
+            }
+            a {
+                color: rgb(82 82 82);
+                text-decoration: inherit;
+                font-weight: 500;
+                padding-right: 5px;
+            };
+            .icon-theme-hedaer {
+                align-self: center;
+                
+                cursor: pointer;
+
+                .icon {
+                    padding-left: 2px;
+                    width: 24px;
+                    height: 24px;
+                }
+            };
+        };
+    };
+};
+@media(max-width: 500px) {
+    nav .yoursign-and-theme a,
+    nav .yoursign-and-theme   {
+        display: none;
+
+        .icon-mobile{
+             display: none;
+            .icon{
+               display: none;
+            }
+            
+        }
+    }
+    
+    nav .select-zodiac-mobile {
+        width: 30px;
+        display: flex;
+        justify-content: flex-end;
+
+        .hamburger-toggle {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+            .burger-menu {
+                // position: relative;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+
+                div {
+                    display: block;
+                    margin: 0 auto;
+                    width: 25px;
+                    height: 3px;
+                    background: black;
+                    border-radius: 0.5px;
+                    border: 1px solid black;
+                }
+            }
+
+            .cancel-menu {
+                // position: relative;
+                width: 30px;
+                height: 30px;
+                display: block;
+            }
+        }
+    }
+}

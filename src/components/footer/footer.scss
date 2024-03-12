@@ -1,0 +1,30 @@
+footer {
+    width: 100%;
+    
+
+    .footer-container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-top: 3rem;
+  padding-bottom: 3rem;
+        
+    .line-footer {
+            max-width: 896px;
+            height: 1px;
+            background: #8f96a3;
+            margin: 0 auto;
+    }
+
+        .nav-footer {
+            width: 100%;
+            margin: 0 auto;
+            max-width: 56rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 3rem;
+            padding-bottom: 3rem; 
+        }
+    }
+
+}
