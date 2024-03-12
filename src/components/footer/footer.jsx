@@ -12,7 +12,7 @@ const Footer = () => {
                 <div className="footer-container">
                     <div className="line-footer"></div>
                     <div className="nav-footer">
-                        <div>© 2024 Mason Yekta. All rights reserved.</div>
+                        <div>© 2024 Harchev Denis. All rights reserved.</div>
                         <div>X</div>
                     </div>
                 </div>

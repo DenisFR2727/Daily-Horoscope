@@ -180,7 +180,7 @@
     .theme {
         display: flex;
         justify-content: space-between;
-        
+        cursor: pointer;
 
         p{
             width: 100%;
@@ -267,6 +267,45 @@
            .block-horoscope {
                 max-width: 150px;
                 
+         }  
+    }
+  }
+}
+@media(max-width:340px) {
+    .horoscope-list {
+        ul {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+    
+           .block-horoscope {
+                max-width: 140px; 
+         }  
+    }
+  }
+}
+@media(max-width:320px) {
+    .horoscope-list {
+        ul {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+    
+           .block-horoscope {
+                max-width: 130px; 
+         }  
+    }
+  }
+}
+@media(max-width:300px) {
+    .horoscope-list {
+        ul {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+    
+           .block-horoscope {
+                max-width: 120px; 
          }  
     }
   }

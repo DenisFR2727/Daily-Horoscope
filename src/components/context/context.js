@@ -11,6 +11,7 @@ export const StateProvider = ({children}) => {
        const [horoscopes, setHoroscopes] = useState([]);
        const [activeMenu, setActiveMenu] = useState(true);
        const [hiddenFooter, setHiddenFooter] = useState(true);
+       const [toggleTheme, setToggleTheme] = useState(false);
 
        useEffect(() => {
           setHoroscopes(Horoscope);
@@ -22,7 +23,9 @@ export const StateProvider = ({children}) => {
          hiddenFooter, 
          setHiddenFooter,
          activeMenu, 
-         setActiveMenu}}>
+         setActiveMenu,
+         toggleTheme, 
+         setToggleTheme}}>
                             {children}
          </HoroscopeContext.Provider>
        )

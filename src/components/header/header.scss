@@ -135,10 +135,12 @@ header {
             }
 
             .cancel-menu {
-                // position: relative;
                 width: 30px;
                 height: 30px;
                 display: block;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
             }
         }
     }
