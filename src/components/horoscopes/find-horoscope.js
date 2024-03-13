@@ -1,5 +1,4 @@
-import { useState, 
-         useEffect, 
+import { useState,  
          useRef, 
          useMemo, 
          useCallback } from "react";
@@ -70,11 +69,6 @@ const FindYourHoroscope = () => {
         return filterHoroscopeDate(dateHoroscope);
     }, [dateHoroscope, filterHoroscopeDate]);
     
-
-   useEffect(() => {
-    console.log(filterHoroscope)
-   },[filterHoroscope])
-
     return (
         <div className="current-zodiac">
             <div className="block-current-zodiac">
