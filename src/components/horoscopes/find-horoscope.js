@@ -121,7 +121,7 @@ const FindYourHoroscope = () => {
                  </div>           
             </div>
             <div className="current-horoscope">
-                 {selectedMonth === currentMonth || selectedDay === currentDay ? [] : filterHoroscope.map((horoscope) => (
+                 {filterHoroscope.map((horoscope) => (
                         <div key={horoscope.id}>
                             <p>{horoscope.name}</p>
                             <p>{horoscope.date}</p>
